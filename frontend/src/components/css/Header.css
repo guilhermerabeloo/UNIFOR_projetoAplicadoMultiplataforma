@@ -1,0 +1,139 @@
+/* Configuracao do visual do componente Header em resolucao padrao */
+#header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 .1px 11px 2px rgba(68, 89, 88, .11);
+    height: 7vh;
+}
+
+#area-utilizavel {
+    display: flex;
+    width: 100%;
+}
+
+#area-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 15%;
+}
+
+#butao-home-header {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+#img-logo {
+    height: 50px;
+    width: 50px;
+}
+
+#titulo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(.5rem, 2vw + 1rem, 1rem);
+    height: 100%;
+    width: 65px;
+    color: var(--verde-escuro);
+    margin-left: 5px;
+}
+
+#area-busca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+#area-busca #input-busca {
+    border-radius: 7px;
+    border: .5px solid var(--verde-escuro);
+    height: 30px;
+    width: 50%;
+    margin-right: 5px;
+}
+
+#area-busca #btn-busca {
+    border-radius: 6px;
+    border: none;
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#area-busca #btn-busca:hover {
+    opacity: .8;    
+}
+
+
+#area-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 5%;
+}
+
+#area-menu .menu-list {
+    font-size: 30px;
+}
+
+/* Configuracao responsividade do componente Header em resolucao até 900px */
+@media screen and (max-width: 900px) {
+    #img-logo {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Configuracao responsividade do componente Header em resolucao até 600px */
+@media screen and (max-width: 600px) {
+    #area-logo {
+        width: 10%;
+    }
+
+    #titulo-logo {
+        display: none;
+    }
+
+    #area-busca {
+        width: 85%;
+    }
+}
+
+/* Configuracao responsividade do componente Header em resolucao até 350px */
+@media screen and (max-width: 350px) {
+    #area-logo {
+        width: 20%;
+    }
+    
+    #area-busca {
+        justify-content: start;
+        width: 75%;
+    }
+
+    #area-busca #input-busca {
+        border-radius: 7px;
+        border: .5px solid var(--verde-escuro);
+        height: 30px;
+        width: 70%;
+        margin-right: 5px;
+    }
+
+
+    #img-logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    #area-busca #btn-busca {
+        width: 30px;
+    }
+}

@@ -1,0 +1,17 @@
+/* Configuracao do visual do componente HomeFeirantes em resolucao padrao */
+#container-homefeirantes {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+}
+
+/* Configuracao responsividade do componente HomeFeirantes em resolucao até 600px */
+@media screen and (max-width: 600px) {
+    #container-homefeirantes {
+        padding: 10px;
+        width: 90%;
+    }
+}

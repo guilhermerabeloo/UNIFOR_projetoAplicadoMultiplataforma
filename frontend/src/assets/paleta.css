@@ -1,0 +1,11 @@
+/* Criacao de variaveis css de cores para facilitar a utilizacoa e organizar o codigo */
+
+:root {
+    --preto: #000000;
+    --verde-escuro: #2E5339;
+    --verde: #3A7D44;
+    --amarelo: #fd8625d8;
+    --laranja: #E76F51;
+    --areia: #E9C46A;
+    --cinza-claro: #F6F6F6;
+}

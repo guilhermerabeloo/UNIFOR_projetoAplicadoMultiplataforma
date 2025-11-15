@@ -1,0 +1,57 @@
+/* Configuracao do visual do componente Home em resolucao padrao */
+#container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 92vh;
+}
+
+.titulo-sessao-home {
+    font-size: clamp(1.1rem, 2vw + 1rem, 2rem);
+    color: var(--verde-escuro);
+}
+
+.conteudo-sessao-home {
+    width: 100%;
+    height: 100%;
+}
+
+.destaque-home {
+    height: 99%;
+    width: 30vw;
+    margin-right: 15px;
+    box-shadow: 0 .1px 11px 2px rgba(68, 89, 88, .11);
+}
+
+.img-destaque-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    overflow: hidden;
+}
+
+.img-destaque-home img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    object-position: center; 
+    display: block;
+}
+
+
+/* Configuracao responsividade do componente Home em resolucao até 900px */
+@media screen and (max-width: 900px) {
+    .destaque-home {
+        width: 50vw;
+    }
+}
+
+/* Configuracao responsividade do componente Home em resolucao até 600px */
+@media screen and (max-width: 600px) {
+    .destaque-home {
+        width: 60vw;
+    }
+}

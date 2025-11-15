@@ -1,0 +1,257 @@
+/* Configuracao do visual do componente LandingPageFeira em resolucao padrao */
+.container-landingpagefeira {
+    display: flex;
+    height: 93vh;
+}
+
+.resumo-feira {
+    width: 60%;
+    padding: 30px;
+}
+
+#titulo-resumo-feira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+#titulo-resumo-feira h2 {
+    font-size: clamp(.5rem, 2vw + 1rem, 3rem);
+    color: var(--verde-escuro);
+}
+
+#feira-funcionandoagora {
+    font-size: clamp(.5rem, 1vw + 1rem, 2rem);
+}
+
+#tagsprodutos-feira {
+    display: flex;
+    align-items: center;
+    height: 5%;
+}
+
+#tagsprodutos-feira ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#tagsprodutos-feira li {
+    position: relative;
+    font-size: 1rem;
+    color: var(--verde);
+}
+
+#tagsprodutos-feira li::after {
+    content: "●";
+    margin-left: 0.5rem;
+}
+
+#tagsprodutos-feira li:last-child::after {
+    content: ""; 
+}
+
+#detalhamento-funcionamento-feira {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45%;
+}
+
+#detalhamento-funcionamento-feira h4 {
+    margin-bottom: 15px;
+    color: var(--verde-escuro);
+}
+
+#detalhamento-funcionamento-feira p span {
+    font-weight: bold;
+    color: var(--verde);
+}
+
+#detalhamento-funcionamento-feira p {
+    margin-bottom: 7px;
+}
+
+#resumo-feirantes-feira {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 40%;
+}
+
+#resumo-feirantes-feira h4 {
+    margin: 0;
+    color: var(--verde-escuro);
+}
+
+.feirante-feira {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+}
+
+.feirante-feira img {
+    width: min(18vw, 200px);
+    height: min(18vw, 200px);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0 .1px 7px 2px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.feirante-feira img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px 3px rgba(0, 0, 0, 0.2);
+}
+
+.midia-feira {
+    width: 40%;
+    padding: 30px;
+}
+
+.imagens-feira {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+.imagens-feira h4 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.imagens-feira img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.localizacao-feira {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+}
+
+.localizacao-feira h4 {
+    color: var(--verde-escuro);
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 80%;
+    aspect-ratio: 16/9; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.localizacao-como-chegar {
+    display: flex;
+    justify-content: end;
+}
+
+#como-chegar {
+    border-radius: 6px;
+    border: none;
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#como-chegar:hover {
+    opacity: .8;    
+}
+
+/* Configuracao responsividade do componente LandingPageFeira em resolucao até 900px */
+@media screen and (max-width: 900px) {
+    .resumo-feira {
+        width: 55%;
+        padding: 10px;
+    }
+
+    .midia-feira {
+        width: 45%;
+        padding: 10px;
+    }
+}
+
+/* Configuracao responsividade do componente LandingPageFeira em resolucao até 600px */
+@media screen and (max-width: 600px) {
+    .container-landingpagefeira {
+        display: flex;
+        flex-direction: column;
+        height: 160vh;
+    }
+
+    .resumo-feira {
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    
+    #titulo-resumo-feira {
+        height: 20%;
+    }
+    
+    
+    #tagsprodutos-feira {
+        height: 5%;
+    }
+
+    #resumo-feirantes-feira {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 30%;
+    }
+
+    .feirante-feira img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .midia-feira {
+        width: 100%;
+        height: 60vh;
+        padding: 30px;
+    }
+
+    .imagens-feira {
+        height: 30vh;
+    }
+
+    .imagens-feira img {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .localizacao-feira {
+        height: 30vh;
+        justify-content: start;
+    }
+
+    .map-wrapper {
+        height: 20vh;
+    }
+}
