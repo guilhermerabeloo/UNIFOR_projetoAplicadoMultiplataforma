@@ -135,7 +135,7 @@ As coordenadas geográficas são obtidas via **API Nominatim (OpenStreetMap)** e
 
 ## 6. Acesso ao sistema
 
-- **URL (produção):** #aqui 
+- **URL (produção):** https://feira-flow-frontend.vercel.app/ 
 - **Ambiente local:**
   - Frontend: http://localhost:5173  
   - Backend: http://localhost:3000
@@ -144,7 +144,7 @@ As coordenadas geográficas são obtidas via **API Nominatim (OpenStreetMap)** e
 
 ## 7. Validação com Público-Alvo
 
-A validação do **FeiraFlow** foi realizada entre **10/11/2025 e 14/11/2025**, por meio de uma **reunião online (Google Meet)** e **demonstração prática da aplicação**.  
+A validação do **FeiraFlow** foi realizada entre **10/11/2025 e 15/11/2025**, por meio de uma **reunião online (Google Meet)** e **demonstração prática da aplicação**.  
 O público-alvo participante foi composto por:
 
 - **Amanda Havila** — consumidora de feiras livres.  

@@ -12,7 +12,8 @@
 ## Evidências
 
 ### Print da reunião de validação
-📎 **Arquivo:** `print_reuniao_sugestao.png`  
+📎 ![imagem com a antiga tela home](../evidence/ApresentacaoAmanda1.jpeg)  
+📎 ![imagem com a antiga tela de landing page da feira](../evidence/ApresentacaoAmanda2.jpeg)  
 
 ---
 

@@ -1,6 +1,6 @@
 ## Relatório de Validação — FeiraFlow
 
-**Data da apresentação:** entre 13/11/2025 e 18/11/2025
+**Data da apresentação:** entre 10/11/2025 e 15/11/2025
 **Local / formato:** Reunião online (Google Meet) e demo da aplicação, com coleta de feedback (Google Form)
 - Público‑alvo convidados: Amanda Havila — consumidora; Gabriel Lima — filho de feirante
 
